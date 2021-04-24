@@ -23,4 +23,4 @@ The project follows these steps:
 * I've got an Artskart database-snapshot (.bak-file) containing all species observation until the 7. march 2021. 
 * Artskart itself is a Microsoft SQL server relational datatabase where data is broken down into multiple different tables in 3NF.
 * The `pre-process-data.ipynb` loads data from SQL Server into S3 using pyspark and AWS CLI:
-![Star schema](https://github.com/aletje/Artskart-project/blob/main/schematics.jpg "schema")
+![schematics](https://github.com/aletje/Artskart-Analytical-Database/blob/main/schematics.jpg "schematics")
