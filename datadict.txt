@@ -1,0 +1,56 @@
+[DIM_STATUS]
+STATUS_KEY Unique key identificator
+STATUS IUCN's Red List of Threatened Species Category abbreviation 
+DESCRIPTION IUCN's Red List of Threatened Species Category description
+
+[DIM_WEATHER_STATION]
+ID Unique key identificator
+NAME Weather station name
+SHORTNAME Weather station short name
+LAT Latitude
+LONG Longitude 
+VALID_FROM Weather station valid from
+COUNTY Weather station's county
+MUNICIPALITY Weather station's municipality
+
+[DIM_LOCATION]
+LOCATION_KEY Unique key identificator
+LOCALITY The observation location name
+LATITUDE The observation latitude
+LONGITUDE The observation longitude
+COUNTRY The observation country
+COUNTY The observation county 
+MUNINAME The observation municipality
+COORDINATEPRECISION The observation coordinate precision in meters
+CONTINENTOCEAN The observation continent ocean
+STATEPROVINCE The observation state or province
+COUNTYORG The observation county organisation
+
+[DIM_DATE_COLLECTED]
+DATE_COLLECTED_KEY Unique key identificator
+YEARCOLLECTED year of collection date
+MONTHCOLLECTED month of collection date
+DAYCOLLECTED day of collected date
+
+[DIM_DATE_IDENTIFIED]
+DATE_IDENTIFIED_KEY Unique key identificator
+YEARIDENTIFIED year of identified date
+MONTHIDENTIFIED month of identified date
+DAYIDENTIFIED day of identified date
+
+[FACT_OBSERVATION]
+OBSERVATION_KEY Unique key identificator
+SPECIES_KEY dim_specie key identificator
+LOCATION_KEY dim_location key identificator
+STATUS_KEY dim_status key identificator
+DATE_COLLECTED_KEY dim_date_collected key identificator
+DATE_IDENTIFIED_KEY dim_date_identified key identificator
+IDENTIFIEDBY person identifying the specie
+COLLECTOR person collecting the specie
+INDIVIDUALCOUNT how many individuals were observed
+NOTES observation notes
+COLLECTINGMETHOD collection method
+OKOLOGI ecology
+HABITAT habitat
+INAME name of institution
+CNAME name of institution
